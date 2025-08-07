@@ -4,7 +4,7 @@ ARG TARGETARCH
 
 RUN mkdir /build
 WORKDIR /build
-COPY *.go .
+COPY apps/todolist-mongo-go/*.go .
 COPY go.mod .
 COPY go.sum .
 RUN go mod download
